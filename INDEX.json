@@ -1,0 +1,58 @@
+[
+  {
+    "name": "audio-intelligence",
+    "description": "Native audio understanding, transcription, speech tone analysis, sound classification, and multi-speaker transcription.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/audio-intelligence/SKILL.md"
+  },
+  {
+    "name": "code-execution",
+    "description": "Enabling Gemini's native sandboxed Python runtime, capturing code outputs, and mathematical/scientific executions.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/code-execution/SKILL.md"
+  },
+  {
+    "name": "context-caching",
+    "description": "Large context caching, cached token management, TTL config, and cost optimization.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/context-caching/SKILL.md"
+  },
+  {
+    "name": "function-calling",
+    "description": "Registering custom Python tools, handling parallel function calls, and executing callback routines.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/function-calling/SKILL.md"
+  },
+  {
+    "name": "multimodal-video",
+    "description": "Native video understanding, event timestamping, frame sampling, and video narrative generation.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/multimodal-video/SKILL.md"
+  },
+  {
+    "name": "search-grounding",
+    "description": "Real-time Google Search grounding, live web query integration, and web source citation extraction.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/search-grounding/SKILL.md"
+  },
+  {
+    "name": "structured-output",
+    "description": "Structured data extraction using Pydantic schemas, strict JSON output formats, and schema validation.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/structured-output/SKILL.md"
+  }
+]

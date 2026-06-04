@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.DS_Store
+temp_*
+sample_*
+orion_architecture.txt
