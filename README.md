@@ -24,19 +24,33 @@ Rather than relying on basic chat models, this toolkit equips developers to cons
 
 ---
 
-## 🛠️ The 7 Core Agentic Skills
+## 🛠️ The 198 Agentic Skills & Domains
 
-Every skill contains a standardized, agent-parsable `SKILL.md` instruction template and copy-paste ready python integration examples:
+The toolkit contains **198 total structured skills** categorized across multiple key developer and research domains. Each skill provides a standardized, agent-parsable `SKILL.md` instruction template and copy-paste ready code examples:
 
-| Skill Directory | Purpose | Core APIs Used |
-|-----------------|---------|----------------|
-| [🎬 multimodal-video](gemini-skills/multimodal-video/SKILL.md) | Temporal video timelines, event spotting, frame analysis | Gemini File API |
-| [🔍 search-grounding](gemini-skills/search-grounding/SKILL.md) | Web queries, news sourcing, live facts with metadata citations | Google Search tool |
-| [📋 structured-output](gemini-skills/structured-output/SKILL.md) | JSON formatting, entity parsing, strict validation | Pydantic validation |
-| [💾 context-caching](gemini-skills/context-caching/SKILL.md) | Multi-turn analysis of massive datasets, books, codebase folders | Gemini Cache API |
-| [🔧 function-calling](gemini-skills/function-calling/SKILL.md) | Mapping arguments, parallel calling, server feedback routing | Custom Python tools |
-| [🐍 code-execution](gemini-skills/code-execution/SKILL.md) | Sandboxed computations, prime factoring, pandas calculations | Native Python sandbox |
-| [🔊 audio-intelligence](gemini-skills/audio-intelligence/SKILL.md) | Speech emotion sensing, multi-speaker logs, timestamped audio | Multimodal waveforms |
+### 1. 🤖 Gemini Core APIs (7 Skills)
+- **`multimodal-video`**: Native video understanding and frame timelines.
+- **`search-grounding`**: Real-time Google Search grounding with inline metadata source citations.
+- **`structured-output`**: Defining schemas (Pydantic/JSON) for strict validation returns.
+- **`context-caching`**: Reusable high-density token caching.
+- **`function-calling`**: Multi-function calling triggers and callback loops.
+- **`code-execution`**: Activating Gemini's native Python execution sandbox.
+- **`audio-intelligence`**: Raw waveform transcriptions, speed trackers, and acoustic diagnostics.
+
+### 2. 🌐 Web & DevOps Utilities (43 Skills)
+- **Frameworks & APIs**: `fastapi-apis`, `nextjs-framework`, `express-routing`, `flask-restful-api`, `vite-frontend`.
+- **Databases & ORMs**: `supabase-db`, `mongodb-db`, `sqlite-database`, `redis-caching`, `prisma-orm-db`.
+- **Testing & Tooling**: `playwright-browser`, `beautifulsoup-scraping`, `python-requests-client`, `python-unittest`.
+- **Infrastructure & Automation**: `github-actions-ci`, `docker-compose-utils`, `nginx-routing`, `cron-scheduling`.
+- **Utilities**: `jwt-auth-utils`, `stripe-payments-api`, `cryptography-api`, `websockets-network`, `pydantic-validation`, `pydantic-settings`, `logging-monitoring`, `linux-bash-scripting`, `regular-expressions`, `semantic-versioning`, `performance-profiling`.
+
+### 🔬 3. Scientific Agent Toolkits (148 Skills)
+- **Computational Physics & Math**: `astropy`, `fluidsim`, `sympy`, `pymoo`.
+- **Structural Biology & Neuroscience**: `protein-structure-prediction`, `esm`, `molecular-dynamics`, `neurokit2`, `neuropixels-analysis`, `neuroscience-imaging`.
+- **Machine Learning & Data Science**: `transformers`, `pytorch-lightning`, `scikit-learn`, `shap`, `umap-learn`, `polars`, `dask`, `networkx`, `seaborn`, `matplotlib`.
+- **Scientific Communication & Grants**: `scientific-writing`, `literature-review`, `peer-review`, `research-grants`, `citation-management`, `latex-posters`, `markdown-mermaid-writing`.
+- **Lab Automation**: `opentrons-integration`, `pylabrobot`, `lamindb`, `benchling-integration`, `protocolsio-integration`.
+
 
 ---
 

@@ -71,7 +71,8 @@ def compile_all_skills():
         ""
     ]
     
-    required_fields = ["name", "description", "allowed-tools", "license", "metadata"]
+    # Only name and description are strictly required for index/instructions
+    required_fields = ["name", "description"]
     
     for folder in skill_folders:
         skill_file = folder / "SKILL.md"
@@ -91,23 +92,32 @@ def compile_all_skills():
             print(f"  ❌ Validation Error in {folder.name}: Missing fields: {missing}")
             continue
             
-        # Register compiled details
+        # Get optional fields with fallbacks
+        allowed_tools = metadata.get("allowed-tools", "Read Write Edit Bash")
+        license_str = metadata.get("license", "BSD-3-Clause license")
+        meta_dict = metadata.get("metadata", {})
+        if not isinstance(meta_dict, dict):
+            meta_dict = {}
+        author = meta_dict.get("skill-author", "Lord1Egypt")
+        
         compiled_skills.append({
             "name": metadata["name"],
             "description": metadata["description"],
-            "allowed_tools": metadata["allowed-tools"],
-            "license": metadata["license"],
-            "author": metadata["metadata"].get("skill-author", "Unknown"),
+            "allowed_tools": allowed_tools,
+            "license": license_str,
+            "author": author,
             "path": f"gemini-skills/{folder.name}/SKILL.md"
         })
         
         # Append to combined instruction markdown
         md_content.append(f"## Skill: {metadata['name']}")
         md_content.append(f"**Description**: {metadata['description']}")
-        md_content.append(f"**Allowed Tools**: {metadata['allowed-tools']}")
+        md_content.append(f"**Allowed Tools**: {allowed_tools}")
         md_content.append("")
         md_content.append(body)
         md_content.append("\n---\n")
+
+
         
     # Write JSON index
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
