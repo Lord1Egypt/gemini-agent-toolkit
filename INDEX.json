@@ -144,6 +144,14 @@
     "path": "gemini-skills/citation-management/SKILL.md"
   },
   {
+    "name": "claude-system-prompt",
+    "description": "Operational rules, safety instructions, reasoning guidelines, and behavioral patterns from the Claude 3.7 Sonnet system prompt.",
+    "allowed_tools": "Read Write Edit Bash",
+    "license": "MIT license",
+    "author": "Lord1Egypt",
+    "path": "gemini-skills/claude-system-prompt/SKILL.md"
+  },
+  {
     "name": "climate-data-analysis",
     "description": "Climate and Earth system data analysis using xarray, cartopy, cfgrib, and CMIP6/ERA5 datasets. Use for loading NetCDF/GRIB climate data, computing climatologies, spatial aggregation, anomaly detection, bias correction, and publication-quality climate maps. Best for atmospheric, oceanic, and land surface data analysis.",
     "allowed_tools": "Read Write Edit Bash",
